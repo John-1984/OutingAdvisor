@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Review Location";
+}
+
+<div id="divLocationGenDetailSection border">
+    <div class="left fullWidth">
+        <div style="color: blue; background-color:lightcyan;">
+            Location Name :Yercaud
+        </div>
+    </div>
+    <div style="min-height: 39%;" class="left centrePosition25Perc">
+        @{Html.RenderPartial("../Location/_LocationRatings");}
+    </div>
+    <div style="min-height: 40%;" class="left border">
+        <div class="expandableHeader"><b>Hotel Pictures</b></div>
+        <table class="centrePosition25Perc">
+            <tr class="centrePosition">
+                <td class="divPictures">
+                    <div>@{Html.RenderPartial("../Location/_Pictures");}</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="min-height: 10%" class="left border fullWidth">
+        <div class="expandableHeader" id="divTravelTips"><b>Travel Tips</b></div>
+        <div id="divTravelTipsContent">
+            <ol>
+                <li>Muddy and Slippery Roads</li>
+            </ol>
+        </div>
+    </div>
+    <div style="min-height: 5%" class="left border fullWidth">
+        <div class="expandableHeader" id="divHotels"><b>Hotels</b></div>
+        <div>
+            <ol>
+                <li>Silver Cloud</li>
+            </ol>
+        </div>
+    </div>
+    <div style="min-height: 4%" class="left border fullWidth">
+        <div class="expandableHeader" id="divReviews"><b>Description</b></div>
+        <p>Nice scenic location</p>
+    </div>
+</div>

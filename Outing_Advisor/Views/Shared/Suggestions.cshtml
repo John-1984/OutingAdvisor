@@ -1,0 +1,37 @@
+﻿<div style="width: 50%; padding-left: 24%; padding-right: 24%" class="parent">
+    @* this section will have user suggestions for site *@
+
+    <div class="left fullWidth">
+        <div class="left quickDetailsParameter">Rate the site Usefullness:</div>
+        <div class="left quickDetailsResults star-icon star-nostar usefullness" data-value="0"></div>
+    </div>
+    <div class="left fullWidth">
+        <div class="left quickDetailsParameter">Rate the site Satisfaction:</div>
+        <div class="left quickDetailsResults star-icon star-nostar satisfaction" data-value="0"></div>
+    </div>
+    <div class="left fullWidth">
+        <div class="left quickDetailsParameter">Rate the site Ease Of Use:</div>
+        <div class="left quickDetailsResults star-icon star-nostar easeofuse" data-value="0"></div>
+    </div>
+    <div class="left fullWidth">
+        <div class="left quickDetailsParameter">Rate the site Look And Feel:</div>
+        <div class="left quickDetailsResults star-icon star-nostar lookandfeel" data-value="0"></div>
+    </div>
+    <div class="left fullWidth">
+        <div class="left quickDetailsParameter">Suggestions/Feedback:</div>
+        <div>
+            <textarea class="feedback" style="height: 100px; overflow: auto; width: 100%;"></textarea>
+        </div>
+    </div>
+    <div class="right">
+        <input type="button" id="btnSave" name="btnSave" value="Save" />
+    </div>
+    <div class="Message">
+
+    </div>
+</div>
+
+<script>
+    initializeSuggestions();
+</script>
+

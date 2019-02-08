@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/Outing")
+    @Styles.Render("~/Content/themes/base/css")
+</head>
+<body class="body">
+    <div id="divOuter" class="displaySize backGroundSetting border">
+        <div id="divHeader" class="header border">
+            <img src="~/Content/Images/sky.jpg" class="headerImage" />
+        </div>
+        <div class="searchSections siteName border">
+            Outing Advisor
+            <input type="button" id="btnHome" value="Home" />
+            <button class="right" onclick="location.href='@Url.Action("Suggestions", "Location")'">Suggestions</button>
+        </div>
+
+        @Html.Action("SearchBar", "Search")
+
+        <div id="divContentHolder" class="contentHolder border">
+            <div id="divContent" class="content border">
+                @RenderBody()
+            </div>
+            @* <div id="divRightHandMenu" class="rightHandMenu">
+                <div class="rightHandMenuInnerContent border">
+                    <div class="border">
+                        <button class="fullWidth" onclick="location.href='@Url.Action("Suggestions", "Location")'">Suggestions</button>
+                    </div>
+                    <div class="border">
+                        <button class="fullWidth" onclick="location.href='@Url.Action("Location", "Location")'">Add a Location</button>
+                    </div>
+                    <div class="border">
+                        <button class="fullWidth" onclick="location.href='@Url.Action("ReviewLocation", "Location")'">Review a Location</button>
+                    </div>
+                </div>
+            </div>*@
+        </div>
+        <div id="divFooter" class="footer left fullWidth border">
+            © Copyright Outing Advisor.Site best viewed at 1024 x 768 resolution in I.E 7 or above, Mozilla 3.5 or above, Google Chrome 3 or above, Safari 5.0 +
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

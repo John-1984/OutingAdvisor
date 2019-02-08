@@ -1,0 +1,44 @@
+﻿<div class="left border">
+    <div class="left">
+        @{Html.RenderPartial("_HotelRatings");}
+    </div>
+    <div class="left fullWidth">
+        <div style="min-height: 40%;" class="border fullWidth">
+            <div class="expandableHeader"><b>Hotel Pictures</b></div>
+            <table class="width49">
+                <tr class="centrePosition">
+                    <td class="divPictures">
+                        <div>@{Html.RenderPartial("../Location/_Pictures");}</div>
+                    </td>
+                </tr>
+            </table>
+
+            @*                <b>Add Pictures</b>
+                <form id="frmUploadPicture" style="padding-left: 20%;">
+                    <input type="file" name="filePicture" value=" " />
+                    <ol>
+                        <li>One File
+                    <button type="submit" name="btnDelete">X</button>
+                        </li>
+                    </ol>
+                </form>*@
+        </div>
+        <div style="min-height: 40%;" class="left border fullWidth">
+            <div class="expandableHeader"><b>Hotel Tips</b></div>
+            @*                <input type="text" name="txtHotelTips" value=" " />
+                <input type="button" name="btnHotelTips" value="Add" />*@
+            <ol>
+                <li>Choose a corner room for couples
+                    @*<button type="submit" name="btnDelete">X</button>*@
+                </li>
+            </ol>
+        </div>
+        <div style="min-height: 40%;" class="left border fullWidth">
+            <div class="expandableHeader"><b>Description</b></div>
+            <p>Hotel was a nice place to stay. The staff is friendly.</p>
+            @*<textarea maxlength="400" style="width: 80%; min-height: 100px;">Hotel was a nice place to stay. The staff is friendly.</textarea>*@
+        </div>
+    </div>
+</div>
+
+

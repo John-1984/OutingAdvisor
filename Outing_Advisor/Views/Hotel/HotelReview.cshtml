@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Hotel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="left fullWidth">
+    <div style="color: blue; background-color:lightcyan;">
+        Hotel Name: <b>@Model.Name</b>
+    </div>
+    @model ApplicationObjects.BO.HotelBO
+    @{
+        Html.RenderPartial("_ViewHotelDetails", Model);
+    }
+</div>
