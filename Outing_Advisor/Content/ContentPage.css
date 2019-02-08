@@ -1,0 +1,108 @@
+﻿/*Layout-Content Start*/
+.content {
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+
+.displayCell {
+    display: table-cell;
+}
+
+.centrePosition {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.centrePosition25Perc {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.shortImageDimensions {
+    width: 86%;
+    height: 200px;
+}
+
+.shortImageDimensionsListing {
+    width: 92%;
+    height: 130px;
+}
+
+.arrowListing {
+    width: 4%;
+    vertical-align: middle;
+    margin-top: 14%;
+}
+
+.arrow {
+    width: 6%;
+    vertical-align: middle;
+    margin-top: 35%;
+}
+
+.nonExpandableHeader {
+    background-color: burlywood;
+}
+
+.expandableHeader {
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.locationHeader {
+    background-color: palegoldenrod;
+}
+
+.quickDetailsParameter {
+    font-weight: bold;
+    vertical-align: middle;
+    float: left;
+    width: 40%;
+}
+
+.quickDetailsResults {
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: right;
+    width: 59%;
+}
+
+.toggleButton {
+    background-color: aqua;
+    height: 69px;
+    width: 10px;
+}
+
+.star-icon {
+    width: 110px;
+    height: 20px;
+    background-color: darksalmon;
+    background-image: url("Images/star_rating.png");
+}
+
+.star-nostar {
+    background-position: 0 0;
+}
+
+.star-one {
+    background-position: 0 100px;
+}
+
+.star-two {
+    background-position: 0 80px;
+}
+
+.star-three {
+    background-position: 0 60px;
+}
+
+.star-four {
+    background-position: 0 40px;
+}
+
+.star-five {
+    background-position: 0 20px;
+}
+
+/*Layout-Content End*/

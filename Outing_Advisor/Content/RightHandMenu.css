@@ -1,0 +1,27 @@
+﻿/*Layout-RightHandMenu Start*/
+.rightHandMenu {
+    width: 19%;
+    float: right;
+    height: 100%;
+}
+
+.minimizer {
+    width: 8%;
+    height: 100%;
+    float: left;
+    background-image: url('Images/arrowhead.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y:center;
+}
+
+.rightHandMenuInnerContent {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+.fullWidth {
+    width: 100%;
+}
+/*Layout-RightHandMenu End*/

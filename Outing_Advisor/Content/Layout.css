@@ -1,0 +1,113 @@
+﻿/*Layout Start*/
+/*Layout-General Start*/
+body {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+.displaySize {
+    /*margin: 10px 100px 100px 100px;*/
+    overflow: hidden;
+}
+
+.contentHolder {
+    height: 64%;
+}
+
+.backGroundSetting {
+    background-image: url('Images/fadedblue.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.halfWidth {
+    width: 50%;
+}
+
+.width49 {
+    width: 49%;
+}
+
+.centerAlign {
+    text-align: center;
+    vertical-align: central;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: normal;
+}
+
+.noBorder {
+    border: none !important;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+/*Layout-General End*/
+
+/*Layout-Header Start*/
+.header {
+    height: 20%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.headerImage {
+    height: 100%;
+    width: 100%;
+}
+/*Layout-Header End*/
+
+/*Layout-Footer Start*/
+.footer {
+    height: 5%;
+    background-color:GrayText;
+}
+/*Layout-Footer End*/
+
+/*Layout-Search Start*/
+.search {
+    height: 10%;
+}
+
+.searchSections {
+    text-align: center;
+    height: 50%;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.siteName {
+    background-color: aliceblue;
+    font-weight: bold;
+    font-size: large;
+}
+/*Layout-Search End*/
+/*Layout End*/
+
+

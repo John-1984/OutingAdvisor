@@ -1,0 +1,25 @@
+﻿<div class="border" style="height: 142px;">
+    <div class="left halfWidth">
+        <span>
+            @Html.ActionLink("Yercaud","Location","Location")</span>
+        <p>Yercaud is a hill station in Salem District, in Tamil Nadu, India. It is located in the Shevaroys range of hills in the Eastern Ghats; the Yercaud hill area is called the Shevaroy Hills.</p>
+    </div>
+    <div class="right width49 border" style="height: 140px;">
+        <div style="vertical-align:central;text-align:center">
+            <div style="width: 10px;" class="border">
+                <div class="left toggleButton">R</div>
+                <div class="left toggleButton">P</div>
+            </div>
+            <table>
+                <tr class="centrePosition">
+                    <td class="invisible divRatings">
+                        <div>@{Html.RenderPartial("../Location/_LocationRatings");}</div>
+                    </td>
+                    <td class="divPictures">
+                        <div>@{Html.RenderPartial("../Location/_Pictures");}</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

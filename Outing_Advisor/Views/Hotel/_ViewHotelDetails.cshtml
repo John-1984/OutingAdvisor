@@ -1,0 +1,38 @@
+﻿<div class="left border">
+    <div class="left">
+        @model ApplicationObjects.BO.HotelBO
+        @{
+            Html.RenderPartial("_HotelRatings", Model.HotelRatings);}
+    </div>
+    <div class="left fullWidth">
+        <div style="min-height: 40%;" class="border fullWidth">
+            <div class="expandableHeader"><b>Hotel Pictures</b></div>
+            <div>
+                <table class="centrePosition25Perc">
+                    <tr>
+                        <td class="divPictures">
+                            <div>@{Html.RenderPartial("../Hotel/_Pictures");}</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="min-height: 40%;" class="left border fullWidth">
+            <div class="expandableHeader"><b>Hotel Tips</b></div>
+            <ol>
+                @foreach (var item in Model.HotelTips)
+                {
+                    <li>
+                        @item
+                    </li>
+                }
+            </ol>
+        </div>
+        <div style="min-height: 40%;" class="left border fullWidth">
+            <div class="expandableHeader"><b>Description</b></div>
+            <p>@Model.ShortDescription</p>
+        </div>
+    </div>
+</div>
+
+

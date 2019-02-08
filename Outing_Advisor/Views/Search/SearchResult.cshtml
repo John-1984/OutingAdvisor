@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "LocationListing";
+}
+
+<div>    
+    @{Html.RenderPartial("_QuickView");}
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".shortImageDimensions").removeClass("shortImageDimensions").addClass("shortImageDimensionsListing");
+        $(".arrow").removeClass("arrow").addClass("arrowListing");
+    });
+</script>

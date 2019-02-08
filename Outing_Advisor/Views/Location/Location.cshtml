@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Location";
+}
+
+<div class="centerAlign border border"><b>@Model.Name</b></div>
+<div id="divLocationGenDetailSection border fullWidth" style="height: 80%;">
+    <div style="min-height: 39%;" class="left">
+        <div class="nonExpandableHeader"><b>Quick View</b></div>
+        @{Html.RenderPartial("_QuickDetails");}
+    </div>
+    <div style="min-height: 40%;" class="left border">
+        <div class="left" id="divGeneralDescription" style="width: 69%; height: 100%;">
+            <div class="nonExpandableHeader"><b>Short Description</b></div>
+            @Model.ShortDescription
+        </div>
+        <div class="left" style="width: 30%;">@{Html.RenderPartial("_Pictures");}</div>
+    </div>
+    <div style="min-height: 35%;" class="left border fullWidth">
+        <div class="expandableHeader" id="divFullDescription"><b>Full Description</b></div>
+        <div id="divFullDescriptionContent">
+            @Model.FullDescription
+        </div>
+    </div>
+    <div style="min-height: 10%" class="left border fullWidth">
+        <div class="expandableHeader" id="divTravelTips"><b>Travel Tips</b></div>
+        <div id="divTravelTipsContent">
+            <ul>
+                @foreach (var item in Model.TravelTips)
+                {
+                    <li>
+                        @item
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+    <div style="min-height: 5%" class="left border fullWidth">
+        <div class="expandableHeader" id="divHotelTips"><b>Hotel Tips</b></div>
+        <div id="divHotelTipsContent">
+            <ul>
+                @foreach (var item in Model.HotelTips)
+                {
+                    <li>
+                        @item
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+    <div style="min-height: 5%" class="left border fullWidth">
+        <div class="expandableHeader" id="divHotelListing"><b>Hotel Listing</b></div>
+        <div id="divHotelListingContent">
+            <ul>
+                <li>
+                    @Html.ActionLink("Silver Cloud", "HotelReview", "Hotel")
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="min-height: 5%" class="left border fullWidth">
+        <div class="expandableHeader" id="divReviews"><b>Reviews</b></div>
+        <div id="divReviewsContent" style="height: 200px; overflow-y: auto; overflow-x: hidden;">
+            <ul>
+                <li>
+                    @Html.ActionLink("By John", "LocationReview", "Location")
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(".shortImageDimensionsListing").removeClass("shortImageDimensionsListing").addClass("shortImageDimensions");
+        $(".arrowListing").removeClass("arrowListing").addClass("arrow");
+    });
+</script>

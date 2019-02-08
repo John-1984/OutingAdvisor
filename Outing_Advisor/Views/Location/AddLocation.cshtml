@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Location";
+}
+
+<div id="divLocationGenDetailSection border fullWidth">
+    <div class="left fullWidth">
+        <div class="border">
+            <b>General Details</b>
+            Location Name:
+        <input type="text" name="txtLocationName" value=" " />
+            Select State ::
+                <select id="optState">
+                    <option>Select</option>
+                    <option>TamilNadu</option>
+                </select>
+            : Select Location ::
+                <select id="optLocation">
+                    <option>Select</option>
+                    <option>Yercaud</option>
+                </select>
+
+        </div>
+        <div class="border">
+            <b>Travel Details</b>
+
+            Distance From City:
+        <input type="text" name="txtDistance" value=" " />
+            Preferred Mode Of Travel:
+                        <select id="optModeTravel">
+                            <option>Select</option>
+                            <option>Car</option>
+                        </select>
+        </div>
+        <div style="min-height: 40%;" class="border">
+            <b>Add Pictures</b>
+            <form id="frmUploadPicture" style="padding-left: 20%;">
+                <input type="file" name="filePicture" value=" " />
+                <ol>
+                    <li>One File
+                    <button type="submit" name="btnDelete">X</button>
+                    </li>
+                </ol>
+            </form>
+        </div>
+        <div class="border">
+            <b>Travel Tips</b>
+            <input type="text" name="txtTravelTips" value=" " />
+            <input type="button" name="btnTravelTips" value="Add" />
+            <ol>
+                <li>Travel by Night
+                    <button type="submit" name="btnDelete">X</button>
+                </li>
+            </ol>
+        </div>
+        <div class="border">
+            <b>Description</b>
+            <textarea maxlength="10000" style="width: 80%; min-height: 100px;">Yercaud is a hill station in Salem District, in Tamil Nadu, India. 
+            It located in the Shevaroys range of hills in the Eastern Ghats; the Yercaud hill area is called the Shevaroy Hills. 
+            It is situated at an altitude of 1515 metres (4970 ft) above sea level. 
+            Coffee and citrus fruits, most notably oranges, are grown in abundance apart from bananas, pears and jackfruit. 
+            Scenically, Yercaud is as enchanting and picturesque as the hill stations on the Western ghats and trekking here can be one of the most pleasurable ways to pass time.
+       </textarea>
+        </div>
+    </div>
+</div>
